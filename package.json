@@ -32,6 +32,7 @@
     "keytar": "^7.0.0",
     "open": "^7.3.0",
     "react": "^16.14.0",
+    "react-apollo-hooks": "^0.5.0",
     "react-blessed": "^0.6.2",
     "react-devtools": "^4.8.2",
     "react-router": "^5.2.0",
