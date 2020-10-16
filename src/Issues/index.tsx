@@ -8,7 +8,7 @@ export const Issues = () => {
         left="center"
         bg="white"
         fg="black"
-        content="Issues"
+        content="Issues Home"
       />
     </Panel>
   );
