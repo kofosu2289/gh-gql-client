@@ -1,6 +1,6 @@
 # GH_GQL_Client
 
-A Githu GraphQL client that runs in the terminal, built with React. It allows the user to see a list of their own repositories, issues and pull requests 
+A Github GraphQL client that runs in the terminal, built with React. It allows the user to see a list of their own repositories, issues and pull requests 
 
 ## Installation
 - Fork and clone this repository
