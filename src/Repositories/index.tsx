@@ -1,10 +1,8 @@
 import React from "react";
 import { Route, Switch, useRouteMatch } from "react-router";
 import { RepositoriesMain } from "./RepositoriesMain";
-import {ListRepositories} from './ListRepositories'
-
-const NewRepository = () => <>New Repository</>;
-
+import { ListRepositories } from "./ListRepositories";
+import { NewRepository } from "./NewRepository";
 
 export const Repositories = () => {
   const match = useRouteMatch();
