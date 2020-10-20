@@ -1,15 +1,18 @@
-import React from "react"
-import { Panel } from "../Panel"
+import React from "react";
+import { Route, Switch, useRouteMatch } from "react-router";
+
+const IssuesMain = () => <>Main</>;
+const NewIssue = () => <>New Issue</>;
+const ListIssues = () => <>ListIssues</>;
 
 export const Issues = () => {
+  const match = useRouteMatch();
+
   return (
-    <Panel height={10} top="25%" left="center">
-      <blessed-text
-        left="center"
-        bg="white"
-        fg="black"
-        content="Issues Home"
-      />
-    </Panel>
+    <Switch>
+      <Route exact path={match.path} component={IssuesMain} />
+      <Route path={`${match.path}/new`} component={NewIssue} />
+      <Route path={`${match.path}/list`} component={ListIssues} />
+    </Switch>
   );
 };
