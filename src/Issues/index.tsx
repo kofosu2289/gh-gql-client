@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch, useRouteMatch } from "react-router";
+import { IssuesMain } from "./IssuesMain";
 
-const IssuesMain = () => <>Main</>;
 const NewIssue = () => <>New Issue</>;
 const ListIssues = () => <>ListIssues</>;
 
