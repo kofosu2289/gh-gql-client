@@ -25,14 +25,14 @@ export const RepositoriesMain = () => {
         top={3}
         bg="white"
         fg="black"
-        content="l:List Repositories"
+        content="l: List Repositories"
       />
       <blessed-button
         left="center"
         top={5}
         bg="white"
         fg="black"
-        content="c:Create New Repository"
+        content="c: Create New Repository"
       />
     </Panel>
   );
