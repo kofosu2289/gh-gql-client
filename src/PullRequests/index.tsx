@@ -1,15 +1,18 @@
 import React from "react";
-import { Panel } from "../Panel";
+import { Route, Switch, useRouteMatch } from "react-router";
+
+const PullRequestsMain = () => <>Main</>;
+const NewPullRequest = () => <>New PullRequest</>;
+const ListPullRequests = () => <>List</>;
 
 export const PullRequests = () => {
+  const match = useRouteMatch();
+
   return (
-    <Panel height={10} top="25%" left="center">
-      <blessed-text
-        left="center"
-        bg="white"
-        fg="black"
-        content="Pull Requests"
-      />
-    </Panel>
+    <Switch>
+      <Route exact path={match.path} component={PullRequestsMain} />
+      <Route path={`${match.path}/new`} component={NewPullRequest} />
+      <Route path={`${match.path}/list`} component={ListPullRequests} />
+    </Switch>
   );
 };
