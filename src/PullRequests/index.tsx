@@ -1,9 +1,8 @@
 import React from "react";
 import { Route, Switch, useRouteMatch } from "react-router";
 import { PullRequestsMain } from "./PullRequestsMain";
+import { NewPullRequest } from "./NewPullRequest";
 import { ListPullRequests } from "./ListPullRequests";
-
-const NewPullRequest = () => <>New PullRequest</>;
 
 export const PullRequests = () => {
   const match = useRouteMatch();
